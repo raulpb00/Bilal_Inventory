@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="logo">Logo de la app.</string>
+    <string name="tvUser">Nombre de usuario / correo electrónico</string>
+    <string name="edUser">Escribe aquí tu nombre de usuario o correo electrónico</string>
+    <string name="tvPassword">Contraseña</string>
+    <string name="edPassword">Escribe aquí tu contraseña</string>
+    <string name="chRemember">Recordar</string>
+    <string name="btSignUp">Registrarse</string>
+    <string name="btSignIn">Iniciar sesión</string>
+    <string name="btSignGoogle">Google</string>
+    <string name="btSignFacebook">Login con Facebook</string>
+</resources>

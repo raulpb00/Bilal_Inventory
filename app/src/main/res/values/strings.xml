@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="logo">App logo.</string>
+    <string name="tvUser">Username / e-mail address</string>
+    <string name="edUser">Type your username or e-mail address here</string>
+    <string name="tvPassword">Password</string>
+    <string name="edPassword">Type your password here</string>
+    <string name="chRemember">Remember me</string>
+    <string name="btSignUp">Sign up</string>
+    <string name="btSignIn">Sign in</string>
+    <string name="btSignGoogle">Google</string>
+    <string name="btSignFacebook">Login in with Facebook</string>
+</resources>
