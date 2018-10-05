@@ -13,5 +13,26 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
 
+    <style name="llLoginEditText">
+        <!--Los atributos padding y margin no se define en los estilos, ya que
+        se aplican una vez que el elemento ya está posicionado y pòdemos obtener resultados no esperados.-->
+        <item name="android:padding">@dimen/llLoginEditText</item>
+        <!--<item name="android:layout_margin">45dp</item>-->
+    </style>
+
+    <!--Estilo para crear un botón transparente aplicando herencia.-->
+    <style name="Widget" parent="@android:style/Widget"/>
+
+    <style name="Widget.Button" parent="@android:style/Widget.Button">
+        <item name="android:color">@android:color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="Widget.Button.Transparent">
+        <item name="android:background">@null</item>
+        <item name="android:color">@android:color/black</item>
+
+    </style>
+
 </resources>
 

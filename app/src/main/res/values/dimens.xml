@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding">16dp</dimen>
+    <!--Fichero generado manualmente para contener las dimensiones que tenga nuestro proyecto.-->
+    <dimen name="llLoginPadding">32dp</dimen>
+    <dimen name="edLoginPasswordStroke">2dp</dimen>
+    <dimen name="llLoginEditText">10dp</dimen>
+
 </resources>

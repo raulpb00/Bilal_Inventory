@@ -2,41 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    android:padding="@dimen/llLoginPadding"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimaryLight">
 
     <TextView
         android:id="@+id/tvUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvUser" />
+        android:text="@string/tvUser"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
 
     <EditText
         android:id="@+id/edUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/edUser"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:background="@drawable/background_shape_edittext"
+        style="@style/llLoginEditText"/>
 
     <TextView
         android:id="@+id/tvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvPassword" />
+        android:text="@string/tvPassword"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
 
     <EditText
         android:id="@+id/edPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/edPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:background="@drawable/background_shape_edittext"
+        style="@style/llLoginEditText"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -45,14 +52,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/chRemember" />
+            android:text="@string/chRemember"
+            android:textAppearance="@android:style/TextAppearance.Small" />
 
         <Button
             android:id="@+id/btSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btSignUp" />
+            android:text="@string/btSignUp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black"
+            style="@style/Widget.Button.Transparent"/>
 
     </LinearLayout>
 
