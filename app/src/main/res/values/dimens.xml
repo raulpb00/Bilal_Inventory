@@ -4,5 +4,7 @@
     <dimen name="llLoginPadding">32dp</dimen>
     <dimen name="edLoginPasswordStroke">2dp</dimen>
     <dimen name="llLoginEditText">10dp</dimen>
+    <dimen name="llLoginBtSignIn">40dp</dimen>
+    <dimen name="llLoginBtGoogle">5dp</dimen>
 
 </resources>

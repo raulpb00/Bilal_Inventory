@@ -24,14 +24,21 @@
     <style name="Widget" parent="@android:style/Widget"/>
 
     <style name="Widget.Button" parent="@android:style/Widget.Button">
-        <item name="android:color">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 
     <style name="Widget.Button.Transparent">
         <item name="android:background">@null</item>
-        <item name="android:color">@android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
 
+    <style name="Widget.Button.Facebook">
+        <item name="android:background">@color/bckFacebook</item>
+    </style>
+
+    <style name="Widget.Button.Google">
+        <item name="android:background">@color/bckGoogle</item>
     </style>
 
 </resources>

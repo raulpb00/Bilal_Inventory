@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#006db3</color>
     <color name="colorAccent">#FF9100</color>
     <color name="colorPrimaryLight">#63ccff</color>
+    <color name="bckFacebook">#3B5998</color>
+    <color name="bckGoogle">#e25f43</color>
 </resources>
