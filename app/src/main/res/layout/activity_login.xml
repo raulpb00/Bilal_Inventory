@@ -52,6 +52,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
+            android:buttonTint="@android:color/darker_gray"
+            android:checked="true"
             android:text="@string/chRemember"
             android:textAppearance="@android:style/TextAppearance.Small" />
 
