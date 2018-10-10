@@ -30,6 +30,7 @@
         android:id="@+id/tvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/llLoginBtSignIn"
         android:text="@string/tvPassword"
         android:textAppearance="@android:style/TextAppearance.Medium" />
 
@@ -49,10 +50,10 @@
 
         <CheckBox
             android:id="@+id/chRemember"
+            style="@style/lly_login_checkbox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
-            android:buttonTint="@android:color/darker_gray"
             android:checked="true"
             android:text="@string/chRemember"
             android:textAppearance="@android:style/TextAppearance.Small" />
@@ -87,9 +88,9 @@
 
     <Button
         android:id="@+id/btSignFacebook"
+        style="@style/Widget.Button.Facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btSignFacebook"
-        style="@style/Widget.Button.Facebook"
-        android:drawableStart="@drawable/ic_ac_facebook"/>
+        android:drawableStart="@drawable/ic_ac_facebook"
+        android:text="@string/btSignFacebook" />
 </LinearLayout>

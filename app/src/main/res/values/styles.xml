@@ -20,6 +20,10 @@
         <!--<item name="android:layout_margin">45dp</item>-->
     </style>
 
+    <style name="lly_login_checkbox">
+        <item name="android:buttonTint">@android:color/darker_gray</item>
+    </style>
+
     <!--Estilo para crear un botón transparente aplicando herencia.-->
     <style name="Widget" parent="@android:style/Widget"/>
 
@@ -40,6 +44,7 @@
     <style name="Widget.Button.Google">
         <item name="android:background">@color/bckGoogle</item>
     </style>
+
 
 </resources>
 

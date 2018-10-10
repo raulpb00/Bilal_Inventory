@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/llLoginPadding"
+    android:background="@color/colorPrimaryLight">
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvUser"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/edUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/background_shape_edittext"
+        style="@style/llLoginEditText"
+        android:layout_below="@id/tvUser"
+        android:layout_alignStart="@id/tvUser"
+        />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/llLoginBtSignIn"
+        android:text="@string/tvPassword"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_below="@id/edUser"
+        android:layout_alignStart="@id/edUser"/>
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/background_shape_edittext"
+        style="@style/llLoginEditText"
+        android:layout_below="@id/tvPassword"
+        android:layout_alignStart="@id/tvPassword"/>
+
+    <CheckBox
+        android:id="@+id/chRemember"
+        style="@style/lly_login_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/chRemember"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:layout_below="@id/edPassword"
+        android:layout_alignStart="@id/edPassword"/>
+
+    <Button
+        android:id="@+id/btSignUp"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPassword"
+        android:layout_alignEnd="@id/edPassword"
+        android:layout_alignBottom="@id/chRemember"
+        android:text="@string/btSignUp"
+        android:textAlignment="textEnd"/>
+
+    <Button
+        android:id="@+id/btSignIn"
+        style="@style/Widget.Button.Facebook"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chRemember"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/llLoginPadding"
+        android:layout_marginBottom="@dimen/llLoginBtSignIn"
+        android:text="@string/btSignIn" />
+
+    <Button
+        android:id="@+id/btSignGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btSignGoogle"
+        style="@style/Widget.Button.Google"
+        android:drawableStart="@drawable/ic_ac_google"
+        android:layout_marginBottom="@dimen/llLoginBtGoogle"
+        android:layout_below="@id/btSignIn"
+        android:layout_alignStart="@id/btSignFacebook"/>
+
+    <Button
+        android:id="@+id/btSignFacebook"
+        style="@style/Widget.Button.Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_ac_facebook"
+        android:text="@string/btSignFacebook"
+        android:layout_alignStart="@id/chRemember"
+        android:layout_below="@id/btSignGoogle"/>
+    <!--android:layout_alignParentBottom="true"-->
+
+</RelativeLayout>
