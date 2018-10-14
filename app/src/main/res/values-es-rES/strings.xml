@@ -9,4 +9,10 @@
     <string name="btSignIn">Iniciar sesión</string>
     <string name="btSignGoogle">Google</string>
     <string name="btSignFacebook">Login con Facebook</string>
+    <string name="btDependencies">Dependencias</string>
+    <string name="btSectors">Sectores</string>
+    <string name="btProducts">Productos</string>
+    <string name="btUserProfile">Perfil</string>
+    <string name="btSettings">Configuración</string>
+    <string name="btHelp">Ayuda</string>
 </resources>

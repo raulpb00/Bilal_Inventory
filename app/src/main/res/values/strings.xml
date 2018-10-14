@@ -8,4 +8,10 @@
     <string name="btSignIn">Sign in</string>
     <string name="btSignGoogle">Google</string>
     <string name="btSignFacebook">Login in with Facebook</string>
+    <string name="btDependencies">Dependencies</string>
+    <string name="btSectors">Sectors</string>
+    <string name="btProducts">Products</string>
+    <string name="btUserProfile">Profile</string>
+    <string name="btSettings">Settings</string>
+    <string name="btHelp">Help</string>
 </resources>

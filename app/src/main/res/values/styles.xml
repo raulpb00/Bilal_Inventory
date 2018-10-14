@@ -45,6 +45,11 @@
         <item name="android:background">@color/bckGoogle</item>
     </style>
 
+    <style name="Widget.Button.DashBoardButton">
+        <item name="android:background">@drawable/shape_dashboard_button_background</item>
+        <item name="android:elevation">@dimen/glDashBoard</item>
+    </style>
+
 
 </resources>
 

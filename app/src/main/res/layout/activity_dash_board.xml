@@ -3,27 +3,73 @@
     android:id="@+id/glDashBoard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/llLoginPadding"
-    android:background="@color/colorPrimaryLight"
-    android:columnCount="2"
-    android:rowCount="4"
-    android:orientation="vertical">
+    android:layout_weight="8"
+    android:columnCount="2">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btDependencies"
+        android:text="@string/btDependencies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_dependency"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btSectors"
+        android:text="@string/btSectors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_sector"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btProducts"
+        android:text="@string/btProducts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_products"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/btUserProfile"
+        android:text="@string/btUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_user"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/btSettings"
+        android:text="@string/btSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_settings"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/btHelp"
+        android:text="@string/btHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/glDashBoard"
+        style="@style/Widget.Button.DashBoardButton"
+        android:drawableTop="@drawable/ic_help"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1" />
+
 </GridLayout>

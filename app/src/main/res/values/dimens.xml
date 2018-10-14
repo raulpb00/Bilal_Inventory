@@ -6,5 +6,7 @@
     <dimen name="llLoginEditText">10dp</dimen>
     <dimen name="llLoginBtSignIn">40dp</dimen>
     <dimen name="llLoginBtGoogle">5dp</dimen>
+    <dimen name="glDashBoard">16dp</dimen>
+    <dimen name="glDashBoardPadding">8dp</dimen>
 
 </resources>
