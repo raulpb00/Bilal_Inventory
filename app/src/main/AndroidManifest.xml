@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".DashBoardActivity"></activity>
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".DependencyEditActivity" />
+        <activity android:name=".SectorEditActivity"></activity>
     </application>
 
 </manifest>

@@ -14,4 +14,13 @@
     <string name="btUserProfile">Profile</string>
     <string name="btSettings">Settings</string>
     <string name="btHelp">Help</string>
+    <string name="tvLongName">Long name</string>
+    <string name="tvShortName">Short name</string>
+    <string name="tvDescription">Description</string>
+    <string name="tvImage">Image</string>
+    <string name="edLongName">Long name</string>
+    <string name="edShortName">Short name</string>
+    <string name="tvDependendies">Dependencies</string>
+    <string name="edDescription">Description</string>
+    <string name="edImage">Image</string>
 </resources>

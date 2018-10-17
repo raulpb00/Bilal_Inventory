@@ -6,7 +6,11 @@
     <dimen name="llLoginEditText">10dp</dimen>
     <dimen name="llLoginBtSignIn">40dp</dimen>
     <dimen name="llLoginBtGoogle">5dp</dimen>
-    <dimen name="glDashBoard">16dp</dimen>
     <dimen name="glDashBoardPadding">8dp</dimen>
+    <dimen name="glDashBoardMargin">16dp</dimen>
+    <dimen name="glDashBoardButtonRadius">16dp</dimen>
+    <dimen name="tlDependendyEditMargin">16dp</dimen>
+    <dimen name="tlDependendyEditFloatingButton">16dp</dimen>
+    <dimen name="ll_sector_edit_padding">16dp</dimen>
 
 </resources>
