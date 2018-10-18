@@ -23,4 +23,5 @@
     <string name="tvDependendies">Dependencies</string>
     <string name="edDescription">Description</string>
     <string name="edImage">Image</string>
+    <string name="err_msg_short_name_too_long">El nombre corto no puede contener más de 10 caracteres.</string>
 </resources>

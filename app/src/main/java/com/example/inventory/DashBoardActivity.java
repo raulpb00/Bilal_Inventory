@@ -14,7 +14,6 @@ public class DashBoardActivity extends AppCompatActivity {
     Intent intent;
     MyListener listener;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +27,6 @@ public class DashBoardActivity extends AppCompatActivity {
         btSectors = findViewById(R.id.btSectors);
         btSectors.setOnClickListener(listener);
     }
-
-    //TODO OnclickListener
 
     public class MyListener implements View.OnClickListener {
 

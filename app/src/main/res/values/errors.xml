@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="err_msg_name_empty">Debe introducir un nombre.</string>
+    <string name="err_msg_short_name_empty">Debe introducir un nombre corto.</string>
+    <string name="err_msg_description_empty">Debe introducir una descripción.</string>
+    <string name="err_msg_short_name_invalid_format">Solo admite caracteres alfabéticos.</string>
+</resources>

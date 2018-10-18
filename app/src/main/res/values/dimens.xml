@@ -12,5 +12,5 @@
     <dimen name="tlDependendyEditMargin">16dp</dimen>
     <dimen name="tlDependendyEditFloatingButton">16dp</dimen>
     <dimen name="ll_sector_edit_padding">16dp</dimen>
-
+    <dimen name="textSize_TextInputLayout">12sp</dimen>
 </resources>
