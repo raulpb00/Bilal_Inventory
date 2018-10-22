@@ -1,11 +1,15 @@
 package com.example.inventory;
 
+import android.content.Context;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 import java.util.regex.Pattern;
 
@@ -27,10 +31,8 @@ public class SectorEditActivity extends AppCompatActivity {
         btGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (validate()){
+                if (validate()) {
                     finish();
-                }else {
-                    //TODO Mostrar error
                 }
             }
         });
@@ -45,6 +47,13 @@ public class SectorEditActivity extends AppCompatActivity {
         tiedDescription = findViewById(R.id.tiedDescription);
 
         btGuardar = findViewById(R.id.btGuardar);
+        /**Inicialización del Listener**/
+//        textWatcher = new EditTextWatcher();
+
+        /**Asignación dl Listener a los componentes**/
+        tiedLongName.addTextChangedListener(new EditTextWatcher(tiedLongName));
+        tiedShortName.addTextChangedListener(new EditTextWatcher(tiedShortName));
+        tiedDescription.addTextChangedListener(new EditTextWatcher(tiedDescription));
     }
 
     /**
@@ -57,44 +66,119 @@ public class SectorEditActivity extends AppCompatActivity {
      */
 
     private boolean validate() {
-        return validateName() && validateShortName() && validateDescription();
+        return validateDescription() & validateShortName() & validateName();
     }
 
     /**
      * Comprueba que el nombre cumple las reglas de negocio.
+     *
      * @return
      */
     private boolean validateName() {
-        boolean result = true;
-        if (tiedLongName.getText().toString().trim().isEmpty()){
-            tiedLongName.setError(getString(R.string.err_msg_name_empty));
-            result = false;
+        if (isEmpty(tiedLongName)) {
+            tilLongName.setError(getString(R.string.err_msg_name_empty));/*Se puede poner tambien al EditText
+            *y aparece el icono a la derecha. Lo ideal es aplicarlo al TextInputLayout
+            */
+            requestFocus(tiedLongName);
+            return false;
         }
-        return result;
+        tilLongName.setErrorEnabled(false);
+        return true;
     }
 
     private boolean validateShortName() {
 
-        boolean result = false;
-        if (tiedShortName.getText().toString().trim().isEmpty()){
-            tiedShortName.setError(getString(R.string.err_msg_short_name_empty));
-        } else if (tiedShortName.getText().toString().trim().length() > SHORTNAME_MAXLENGTH){
-            tiedShortName.setError(getString(R.string.err_msg_short_name_too_long));
-        } else if (!Pattern.matches("^[a-zA-ZñÑ]+$", tiedShortName.getText().toString().trim())){
-            tiedShortName.setError(getString(R.string.err_msg_short_name_invalid_format));
-        } else {
-            result = true;
+        if (isEmpty(tiedShortName) || isShortNameTooLong() || isFormatInvalid()) {
+            requestFocus(tiedShortName);
+            return false;
         }
-        return result;
+        tilShortName.setErrorEnabled(false);
+        return true;
+    }
+
+    private boolean isFormatInvalid() {
+        if (!Pattern.matches("^[a-zA-ZñÑ]+$", tiedShortName.getText().toString().trim())) {
+            tilShortName.setError(getString(R.string.err_msg_short_name_invalid_format));
+            return true;
+        }
+        return false;
+
+    }
+
+    private boolean isShortNameTooLong() {
+        if (tiedShortName.getText().toString().trim().length() > SHORTNAME_MAXLENGTH) {
+            tilShortName.setError(getString(R.string.err_msg_short_name_too_long));
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isEmpty(TextInputEditText tiedShortName) {
+        if (tiedShortName.getText().toString().trim().isEmpty()) {
+            tilShortName.setError(getString(R.string.err_msg_short_name_empty));
+            return true;
+        }
+        return false;
     }
 
     private boolean validateDescription() {
-        boolean result = true;
-        if (tiedDescription.getText().toString().trim().isEmpty()){
-            tiedDescription.setError(getString(R.string.err_msg_description_empty));
-            result = false;
+        if (isEmpty(tiedDescription)) {
+            tilDescription.setError(getString(R.string.err_msg_description_empty));
+            requestFocus(tiedDescription);
+            return false;
         }
-        return result;
+        tilDescription.setErrorEnabled(false);
+        return true;
+    }
+
+    /**
+     * Este método coloca el foco en el componente View que se pasa por parámetro y abre el método
+     * de entrada por defecto.
+     *
+     * @param view
+     */
+    private void requestFocus(View view) {
+        if (view.requestFocus()) {
+//            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+            ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(view, InputMethodManager.SHOW_IMPLICIT);
+        }
+    }
+
+    /**
+     * Esta clase comprueba el texto que se introduce y nos avisa de los errores
+     */
+    private class EditTextWatcher implements TextWatcher {
+
+        private View view;
+
+        private EditTextWatcher(View view){
+            this.view = view;
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {
+            switch (view.getId()) {
+                case R.id.tiedLongName:
+                validateName();
+                    break;
+                case R.id.tiedShortName:
+                    validateShortName();
+                    break;
+                case R.id.tiedDescription:
+                    validateDescription();
+                    break;
+            }
+        }
     }
 
 

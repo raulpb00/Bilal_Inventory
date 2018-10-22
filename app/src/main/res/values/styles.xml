@@ -68,8 +68,7 @@
     </style>
 
     <style name="Widget.TextInputLayout.Error">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="colorError">@color/bckGoogle</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
     </style>
 
 

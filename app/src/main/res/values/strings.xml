@@ -24,4 +24,18 @@
     <string name="edDescription">Description</string>
     <string name="edImage">Image</string>
     <string name="err_msg_short_name_too_long">El nombre corto no puede contener más de 10 caracteres.</string>
+    <string name="edName_register" >Name</string>
+    <string name="edEmail_register">Email</string>
+    <string name="edRepeatPassword">Repeat password</string>
+    <string name="swNotification">Notify</string>
+    <string name="btSignUp_register">Sign up</string>
+
+    <!-- ARRAY -->
+    <string-array name="entriesDependencies">
+        <item>1CFGM</item>
+        <item>2GFGM</item>
+        <item>1CFGS</item>
+        <item>2CFGS</item>
+    </string-array>
 </resources>
+
