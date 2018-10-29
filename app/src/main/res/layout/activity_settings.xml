@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/swNotifications"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/swNotifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbTheme" />
+
+    <TextView
+        android:id="@+id/tvLigthTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/tvLigthTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tbTheme"
+        app:layout_constraintEnd_toStartOf="@+id/tbTheme"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgNotifications"
+        android:layout_width="218dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swNotifications">
+
+        <RadioButton
+            android:id="@+id/rbNotification1h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/notification_1h" />
+
+        <RadioButton
+            android:id="@+id/rbNotification2h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbNotification2h" />
+
+        <RadioButton
+            android:id="@+id/rbNotification3h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbNotification3h" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/tbTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/selector_togglebutton"
+        android:text="@string/tbTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvLigthTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

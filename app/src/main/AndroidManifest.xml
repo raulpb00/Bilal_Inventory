@@ -22,7 +22,8 @@
         <activity android:name=".DashBoardActivity" />
         <activity android:name=".DependencyEditActivity" />
         <activity android:name=".SectorEditActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

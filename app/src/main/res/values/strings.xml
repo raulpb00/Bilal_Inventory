@@ -24,11 +24,17 @@
     <string name="edDescription">Description</string>
     <string name="edImage">Image</string>
     <string name="err_msg_short_name_too_long">El nombre corto no puede contener más de 10 caracteres.</string>
-    <string name="edName_register" >Name</string>
+    <string name="edName_register">Name</string>
     <string name="edEmail_register">Email</string>
     <string name="edRepeatPassword">Repeat password</string>
     <string name="swNotification">Notify</string>
     <string name="btSignUp_register">Sign up</string>
+    <string name="notification_1h">Notificaciones cada 1 hora</string>
+    <string name="rbNotification2h">Notificaciones cada 2 horas</string>
+    <string name="rbNotification3h">Notificaciones cada 3 horas</string>
+    <string name="tvLigthTheme">Activar tema claro</string>
+    <string name="swNotifications">Notificaciones</string>
+    <string name="tbTheme">Ligth Theme</string>
 
     <!-- ARRAY -->
     <string-array name="entriesDependencies">
