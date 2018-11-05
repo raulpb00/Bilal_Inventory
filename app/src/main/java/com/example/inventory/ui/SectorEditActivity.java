@@ -1,4 +1,4 @@
-package com.example.inventory;
+package com.example.inventory.ui;
 
 import android.content.Context;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +10,8 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+
+import com.example.inventory.R;
 
 import java.util.regex.Pattern;
 
