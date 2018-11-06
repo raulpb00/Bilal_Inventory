@@ -21,7 +21,7 @@ public class DependencyRepository {
     }
 
     private void initialice() {
-        addDependency();
+//        addDependency();
     }
 
     /**
