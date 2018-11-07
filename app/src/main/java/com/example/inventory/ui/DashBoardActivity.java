@@ -40,7 +40,7 @@ public class DashBoardActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.btDependencies:
-                    intent = new Intent(DashBoardActivity.this, DependencyEditActivity.class);
+                    intent = new Intent(DashBoardActivity.this, DependencyListActivity.class);
                     break;
                 case R.id.btSectors:
                     intent = new Intent(DashBoardActivity.this, SectorEditActivity.class);

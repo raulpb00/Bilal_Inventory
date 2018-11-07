@@ -5,8 +5,8 @@ import com.example.inventory.pojo.Dependency;
 import java.util.ArrayList;
 
 public class DependencyRepository {
-    private ArrayList<Dependency> dependencies;
 
+    private ArrayList<Dependency> dependencies;
     private static DependencyRepository dependencyRepository;
 
     //Inicialización estática o de clase:
@@ -21,14 +21,17 @@ public class DependencyRepository {
     }
 
     private void initialice() {
-//        addDependency();
+        //llenar el array
+        add(new Dependency(1, "1º Ciclo Formativo Grado Superior", "1CFGS", "Primer curso del Ciclo Formativo de Grado Superior","img"));
+        add(new Dependency(1, "2º Ciclo Formativo Grado Superior", "2CFGS", "Segundo curso del Ciclo Formativo de Grado Superior","img"));
+
     }
 
     /**
      * Método que añade una dependencia al repositorio
      */
-    private void addDependency(Dependency dependency) {
-
+    private void add(Dependency dependency) {
+        dependencies.add(dependency);
     }
 
     public static DependencyRepository getDependencyRepository() {
