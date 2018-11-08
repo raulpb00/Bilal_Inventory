@@ -3,6 +3,7 @@
     package="com.example.inventory">
 
     <application
+        android:name=".InventoryApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +26,8 @@
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.SettingsActivity" />
         <activity android:name=".ui.ProductActivity" />
-        <activity android:name=".ui.DependencyListActivity"></activity>
+        <activity android:name=".ui.DependencyListActivity" />
+        <activity android:name=".ui.SectionListActivity"></activity>
     </application>
 
 </manifest>

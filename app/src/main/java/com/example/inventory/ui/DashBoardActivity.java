@@ -43,7 +43,7 @@ public class DashBoardActivity extends AppCompatActivity {
                     intent = new Intent(DashBoardActivity.this, DependencyListActivity.class);
                     break;
                 case R.id.btSectors:
-                    intent = new Intent(DashBoardActivity.this, SectorEditActivity.class);
+                    intent = new Intent(DashBoardActivity.this, SectionListActivity.class);
                     break;
                 case R.id.btSettings:
                     intent = new Intent(DashBoardActivity.this, SettingsActivity.class);

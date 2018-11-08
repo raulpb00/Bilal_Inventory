@@ -15,4 +15,5 @@
     <dimen name="textSize_TextInputLayout">12sp</dimen>
     <dimen name="drawableicon">5dp</dimen>
     <dimen name="letter_icon_size">50dp</dimen>
+    <dimen name="float_margin">16dp</dimen>
 </resources>

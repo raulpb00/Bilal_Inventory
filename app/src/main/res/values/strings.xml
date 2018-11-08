@@ -35,6 +35,7 @@
     <string name="tvLigthTheme">Activar tema claro</string>
     <string name="swNotifications">Notificaciones</string>
     <string name="tbTheme">Ligth Theme</string>
+    <string name="action_dependency_edit">Editar Dependencia</string>
 
     <!-- ARRAY -->
     <string-array name="entriesDependencies">
