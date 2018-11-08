@@ -15,6 +15,7 @@ public class InventoryApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        sectionRepository = new SectionRepository();
     }
 
     public SectionRepository getSectionRepository() {

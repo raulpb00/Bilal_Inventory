@@ -27,7 +27,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionV
     @NonNull
     @Override
     public SectionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = ((LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.section_item, parent);
+        View view = ((LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.section_item, parent, false);
         SectionViewHolder sectionViewHolder = new SectionViewHolder(view);
         return sectionViewHolder;
     }

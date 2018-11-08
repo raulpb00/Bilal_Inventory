@@ -44,6 +44,7 @@ public class DependencyAdapter extends ArrayAdapter {
 
         //4. Mostrar los datos del ArrayList en los widget.
         dependency = (Dependency) getItem(position);
+        dependencyHolder.icon.setLettersNumber(String.valueOf(dependency.getId()).length());
         dependencyHolder.icon.setLetter(String.valueOf(dependency.getId()));
         dependencyHolder.tvShortName.setText(dependency.getShortName());
         dependencyHolder.tvDescription.setText(dependency.getDescripcion());

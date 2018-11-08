@@ -7,16 +7,16 @@
     tools:context=".ui.SectionListActivity">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/btAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/float_margin"
+        android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvSections"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>
