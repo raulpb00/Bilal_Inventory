@@ -24,10 +24,19 @@
         <activity android:name=".ui.DependencyEditActivity" />
         <activity android:name=".ui.SectorEditActivity" />
         <activity android:name=".ui.RegisterActivity" />
-        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.SettingsSelectorActivity" />
         <activity android:name=".ui.ProductActivity" />
         <activity android:name=".ui.DependencyListActivity" />
-        <activity android:name=".ui.SectionListActivity"></activity>
+        <activity android:name=".ui.SectionListActivity" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:theme="@style/AppTheme.MaterialAboutActivity" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.AccountPreferencesActivity"
+            android:label="@string/title_activity_account_preferences"></activity>
     </application>
 
 </manifest>

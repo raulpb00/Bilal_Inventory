@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Settings-->
+    <string name="setting_category_general">Opciones generales</string>
+    <string name="setting_showimage_inlist_title">Imágenes en lista</string>
+    <string name="setting_showimage_inlist_sumary_on">Mostrando</string>
+    <string name="setting_showimage_inlist_sumary_off">Ocultas</string>
+    <string name="setting_numcolumn_inrecycler_title">Columnas</string>
+
+    <!--Account preferences-->
+    <string-array name="setting_numcolumn_inrecycler_entries">
+        <item>Una columna</item>
+        <item>Dos columnas</item>
+        <item>Tres columnas</item>
+    </string-array>
+    <string-array name="setting_numcolumn_inrecycler_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

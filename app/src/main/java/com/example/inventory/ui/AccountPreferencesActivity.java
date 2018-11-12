@@ -23,11 +23,10 @@ import com.example.inventory.R;
 
 import java.util.List;
 
-public class SettingsActivity extends AppCompatPreferenceActivity {
+public class AccountPreferencesActivity extends AppCompatPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.settings);
     }
 }

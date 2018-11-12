@@ -3,6 +3,9 @@ package com.example.inventory.ui;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -34,6 +37,29 @@ public class DashBoardActivity extends AppCompatActivity {
         btSettings.setOnClickListener(listener);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.dashboard_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_account_preferences:
+                intent = new Intent(DashBoardActivity.this, AccountPreferencesActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_settings:
+                intent = new Intent(DashBoardActivity.this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                    return false;
+        }
+    }
+
     public class MyListener implements View.OnClickListener {
 
         @Override
@@ -46,7 +72,10 @@ public class DashBoardActivity extends AppCompatActivity {
                     intent = new Intent(DashBoardActivity.this, SectionListActivity.class);
                     break;
                 case R.id.btSettings:
-                    intent = new Intent(DashBoardActivity.this, SettingsActivity.class);
+                    intent = new Intent(DashBoardActivity.this, SettingsSelectorActivity.class);
+                    break;
+                case R.id.btHelp:
+                    intent = new Intent(DashBoardActivity.this, AboutActivity.class);
                     break;
             }
             startActivity(intent);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/setting_category_general">
+        <SwitchPreference android:key="showimage_inlist"
+            android:defaultValue="true"
+            android:summaryOff="@string/setting_showimage_inlist_sumary_off"
+            android:summaryOn="@string/setting_showimage_inlist_sumary_on"
+            android:title="@string/setting_showimage_inlist_title"></SwitchPreference>
+        <ListPreference android:key="numcolumn_inrecycler"
+            android:title="@string/setting_numcolumn_inrecycler_title"
+            android:defaultValue="1"
+            android:summary="%s"
+            android:entries="@array/setting_numcolumn_inrecycler_entries"
+            android:entryValues="@array/setting_numcolumn_inrecycler_values">
+
+        </ListPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

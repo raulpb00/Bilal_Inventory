@@ -71,6 +71,12 @@
         <item name="android:textColor">@android:color/holo_red_light</item>
     </style>
 
+    <!--Estilo para el AboutActivity-->
+    <style name="AppTheme.MaterialAboutActivity" parent="Theme.Mal.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
 </resources>
 

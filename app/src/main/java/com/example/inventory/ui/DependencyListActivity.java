@@ -30,7 +30,7 @@ public class DependencyListActivity extends AppCompatActivity {
 //        lvDependencies.setAdapter(arrayAdapter);
 
 
-        //Ejempl B: Utilizamos un xml personalizado para el adapter dependency_item.xml
+        //Ejemplo B: Utilizamos un xml personalizado para el adapter dependency_item.xml
         DependencyAdapter dependencyAdapter = new DependencyAdapter(this);
         lvDependencies.setAdapter(dependencyAdapter);
         lvDependencies.setOnItemClickListener(new AdapterView.OnItemClickListener() {
