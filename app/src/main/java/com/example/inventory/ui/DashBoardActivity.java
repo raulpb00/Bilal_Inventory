@@ -16,6 +16,8 @@ public class DashBoardActivity extends AppCompatActivity {
     Button btDependencies;
     Button btSectors;
     Button btSettings;
+    Button btProducts;
+    Button btUserProfile;
 
     Intent intent;
     MyListener listener;
@@ -33,8 +35,16 @@ public class DashBoardActivity extends AppCompatActivity {
         btSectors = findViewById(R.id.btSectors);
         btSectors.setOnClickListener(listener);
 
+        btProducts = findViewById(R.id.btProducts);
+        btProducts.setOnClickListener(listener);
+
         btSettings = findViewById(R.id.btSettings);
         btSettings.setOnClickListener(listener);
+
+        btUserProfile = findViewById(R.id.btUserProfile);
+        btUserProfile.setOnClickListener(listener);
+
+
     }
 
     @Override
@@ -70,6 +80,12 @@ public class DashBoardActivity extends AppCompatActivity {
                     break;
                 case R.id.btSectors:
                     intent = new Intent(DashBoardActivity.this, SectionListActivity.class);
+                    break;
+                case R.id.btProducts:
+                    intent = new Intent(DashBoardActivity.this, ProductListActivity.class);
+                    break;
+                case R.id.btUserProfile:
+//                    intent = new Intent(DashBoardActivity.this, .class);
                     break;
                 case R.id.btSettings:
                     intent = new Intent(DashBoardActivity.this, SettingsSelectorActivity.class);

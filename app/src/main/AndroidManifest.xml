@@ -36,7 +36,8 @@
             android:label="@string/title_activity_settings" />
         <activity
             android:name=".ui.AccountPreferencesActivity"
-            android:label="@string/title_activity_account_preferences"></activity>
+            android:label="@string/title_activity_account_preferences" />
+        <activity android:name=".ui.ProductListActivity"></activity>
     </application>
 
 </manifest>
